@@ -47,3 +47,15 @@ TEST(GetByteCount, expect_4_when_1114111) {
 	UnicodeConverter unicodeConverter;
 	EXPECT_EQ(4, unicodeConverter.getByteCount(1114111));
 }
+TEST(GetEncodedValue, expect_79_when_121) {
+	UnicodeConverter unicodeConverter;
+	EXPECT_EQ("79", unicodeConverter.getEncodedValue(121));
+}
+TEST(GetEncodedValue, expect_C4A0_when_288) {
+	UnicodeConverter unicodeConverter;
+	EXPECT_EQ("c4a0", unicodeConverter.getEncodedValue(288));
+}
+TEST(GetEncodedValue, expect_E0A4A0_when_2336) {
+	UnicodeConverter unicodeConverter;
+	EXPECT_EQ("e0a4a0", unicodeConverter.getEncodedValue(2336));
+}
