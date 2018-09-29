@@ -6,6 +6,7 @@ public:
 	std::string convertToHexadecimal(int Integer);
 	int getByteCount(int Integer);
 	std::string getEncodedValue(int Integer);
+	std::string convertFromCodePage427(char character);
 	UnicodeConverter();
 	~UnicodeConverter();
 };
