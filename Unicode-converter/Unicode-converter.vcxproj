@@ -115,13 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CodePage427.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UnicodeConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CodePage427.h" />
     <ClInclude Include="UnicodeConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="386intel.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

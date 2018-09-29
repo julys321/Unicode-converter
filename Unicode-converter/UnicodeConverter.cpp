@@ -44,7 +44,7 @@ std::string UnicodeConverter::getEncodedValue(int Integer){
 	return convertToHexadecimal(Integer);
 }
 
-std::string UnicodeConverter::convertFromCodePage427(char character) {
+std::string UnicodeConverter::convertFromCodePage427(unsigned char character) {
 
 	if (character < 128) return std::string(1, character);
 	if (character == 128) return u8"\u00C7";
