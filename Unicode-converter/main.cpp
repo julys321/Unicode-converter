@@ -3,6 +3,7 @@
 int main() {
 	int userInput;
 	UnicodeConverter unicodeConverter;
+	setlocale(LC_ALL, "");
 	//requirements for part one
 	std::cout << "Enter integer that will be converted to UTF-8 encoding:\n";
 	std::cin >> userInput;
